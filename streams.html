@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Agora Homework 3</title>
+        <link rel="stylesheet" href="streamStyles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="flexContainer">
+            <div id="leftPane">
+                <div id="logoContainer">
+                    <img id="logo" src="assets/agoraLogo.png"/>
+                </div>
+                <div id="loginContainer">
+                    <span id="headingText">
+                        Join A Chat!
+                    </span>
+                    <input type="text" id="username" placeholder="Username" value="JohnDoe123">
+                    <input type="text" id="channelName" placeholder="ChannelName" value="Agora">
+                    <button id="joinButton" onclick="startCall()">Join</button>
+                </div>
+            </div>
+            <div id="rightPane">
+                <div id="selfStream"></div>
+                <div id="remoteStream"></div>
+            </div>
+        </div>
+        <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
+        <script src="videoCall.js"></script>
+    </body>
+</html>
